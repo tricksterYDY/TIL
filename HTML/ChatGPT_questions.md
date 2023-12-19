@@ -1,10 +1,10 @@
-
+# Q : "Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?"
 HTML has optional tags, and the <tbody> tag is one of them. When you create a table in HTML without explicitly including the <tbody> tag, the browser will still generate it in the Document Object Model (DOM) during the rendering process.
 
 In your provided example, even though you didn't include <tbody> in your HTML code, the browser's developer tools are adding it in the DOM representation. The browser automatically adds <tbody> to group the table rows (<tr>) when it's not explicitly provided.
 
 So, your HTML code without <tbody>:
-'''html
+```html
 <table>
   <tr>
     <th>용도</th>
@@ -14,10 +14,10 @@ So, your HTML code without <tbody>:
   </tr>
   <!-- ... (other rows) ... -->
 </table>
-'''
+```
 
 Is essentially interpreted by the browser as:
-'''html
+```html
 <table>
   <tbody>
     <tr>
@@ -29,7 +29,7 @@ Is essentially interpreted by the browser as:
     <!-- ... (other rows) ... -->
   </tbody>
 </table>
-'''
+```
 
 This behavior is specified in the HTML5 specification. The <tbody> element is automatically created by the browser if not explicitly provided, and it serves as a container for the rows in the table. It's a part of the HTML standard to enhance the structure of tables in the DOM.
 
