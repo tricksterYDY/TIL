@@ -1,4 +1,6 @@
-# Q : "Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?"
+# Q :
+## "Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?"
+# A : (explained below)
 HTML has optional tags, and the <tbody> tag is one of them. When you create a table in HTML without explicitly including the <tbody> tag, the browser will still generate it in the Document Object Model (DOM) during the rendering process.
 
 In your provided example, even though you didn't include <tbody> in your HTML code, the browser's developer tools are adding it in the DOM representation. The browser automatically adds <tbody> to group the table rows (<tr>) when it's not explicitly provided.
@@ -33,8 +35,10 @@ Is essentially interpreted by the browser as:
 
 This behavior is specified in the HTML5 specification. The <tbody> element is automatically created by the browser if not explicitly provided, and it serves as a container for the rows in the table. It's a part of the HTML standard to enhance the structure of tables in the DOM.
 
-Q: self-contained tags list
-A: If by "self-contained tags list" you are referring to HTML tags that are considered self-contained or void elements (elements that cannot have content and don't need a closing tag), here are some common examples:
+# Q :
+## self-contained tags list
+# A : `<img>`, `<br>`, `<hr>`, `<input>`, `<meta>`, `<link>`, `<base>`, `<wbr>`, `<col>`
+If by "self-contained tags list" you are referring to HTML tags that are considered self-contained or void elements (elements that cannot have content and don't need a closing tag), here are some common examples:
 
 1. **`<img>`:**
    - Used to embed images.
