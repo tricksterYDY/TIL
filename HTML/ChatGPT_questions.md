@@ -149,3 +149,53 @@ Certainly! In the context of HTML, "rel" and "href" are attributes used in ancho
      In this example, the "https://www.example.com" value for "href" indicates the URL that the hyperlink points to.
 
 These attributes are crucial for creating navigation and linking documents in HTML. The "rel" attribute defines the relationship of the linked resource, while the "href" attribute specifies the location of that resource.
+
+# Q :
+
+## What are em and rem in CSS?"
+
+# A : (explained below)
+
+In CSS, `em` and `rem` are units of measurement that are used to define the size of elements. Here's an explanation of each:
+
+1. **em:**
+   - The `em` unit is a relative unit of measurement in CSS. It is based on the font size of the parent element. When you set a property using `em`, it is calculated relative to the font size of the element's nearest parent with a defined font size.
+
+   Example:
+   ```css
+   body {
+       font-size: 16px; /* Assume a base font size for the body */
+   }
+
+   h1 {
+       font-size: 2em; /* This will be 32px (2 * 16px) */
+   }
+
+   p {
+       font-size: 1.5em; /* This will be 24px (1.5 * 16px) */
+   }
+   ```
+
+   In this example, the `em` unit is used to set the font size of `h1` and `p` elements relative to the font size of the `body`.
+
+2. **rem:**
+   - The `rem` unit is also a relative unit, but it is based on the font size of the root element (usually the `<html>` element). This makes `rem` more predictable and easier to manage, especially in complex layouts.
+
+   Example:
+   ```css
+   html {
+       font-size: 16px; /* Set a base font size for the entire document */
+   }
+
+   h1 {
+       font-size: 2rem; /* This will be 32px (2 * 16px) */
+   }
+
+   p {
+       font-size: 1.5rem; /* This will be 24px (1.5 * 16px) */
+   }
+   ```
+
+   In this example, the `rem` unit is used to set the font size of `h1` and `p` elements relative to the root (`html`) font size.
+
+Using relative units like `em` and `rem` is beneficial for creating flexible and scalable designs, especially in responsive web development where elements need to adapt to different screen sizes. `rem` is often preferred in modern web development because it avoids the compounding effects of nested elements that use `em`.
