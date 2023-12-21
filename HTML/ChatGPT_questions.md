@@ -159,7 +159,7 @@ These attributes are crucial for creating navigation and linking documents in HT
 In CSS, `em` and `rem` are units of measurement that are used to define the size of elements. Here's an explanation of each:
 
 1. **em:**
-   - The `em` unit is a relative unit of measurement in CSS. It is based on the font size of the parent element. When you set a property using `em`, it is calculated relative to the font size of the element's nearest parent with a defined font size.
+   - The `em` unit is a relative unit of measurement in CSS. `em` stands for "emphasized". It is based on the font size of the parent element. When you set a property using `em`, it is calculated relative to the font size of the element's nearest parent with a defined font size.
 
    Example:
    ```css
@@ -179,7 +179,7 @@ In CSS, `em` and `rem` are units of measurement that are used to define the size
    In this example, the `em` unit is used to set the font size of `h1` and `p` elements relative to the font size of the `body`.
 
 2. **rem:**
-   - The `rem` unit is also a relative unit, but it is based on the font size of the root element (usually the `<html>` element). This makes `rem` more predictable and easier to manage, especially in complex layouts.
+   - The `rem` unit is also a relative unit, but it is based on the font size of the root element (usually the `<html>` element). `rem` stands for "root em". This makes `rem` more predictable and easier to manage, especially in complex layouts.
 
    Example:
    ```css
