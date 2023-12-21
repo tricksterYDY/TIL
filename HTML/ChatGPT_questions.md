@@ -116,4 +116,36 @@ Hidden fields can be used to track information that doesn't need to be displayed
 ```
 In summary, type="hidden" is needed when you want to include data in a form that should be submitted but doesn't need to be displayed to the user. This is useful for various purposes, including maintaining state, passing information between pages, and enhancing the security of form submissions.
 
+# Q :
 
+## What do 'link', 'rel', & 'href' stand for?
+
+# A : (explained below)
+
+Certainly! In the context of HTML, "rel" and "href" are attributes used in anchor (`<a>`) and link (`<link>`) elements. Here's what each attribute means:
+
+1. **rel:**
+   - **Meaning:** The "rel" attribute stands for "relationship," and it specifies the relationship between the linked document and the current document. It is commonly used with the `<link>` element for stylesheets and the `<a>` element for hyperlinks.
+
+   - **Example with link element:**
+     ```html
+     <link rel="stylesheet" href="styles.css">
+     ```
+     In this example, the "stylesheet" value for "rel" indicates that the linked document (styles.css) is a stylesheet.
+
+   - **Example with anchor element:**
+     ```html
+     <a href="https://www.example.com" rel="nofollow">Visit Example.com</a>
+     ```
+     In this example, the "nofollow" value for "rel" indicates that search engines should not follow the link.
+
+2. **href:**
+   - **Meaning:** The "href" attribute stands for "hypertext reference," and it specifies the URL or location of the linked resource. It is used to create hyperlinks.
+
+   - **Example with anchor element:**
+     ```html
+     <a href="https://www.example.com">Visit Example.com</a>
+     ```
+     In this example, the "https://www.example.com" value for "href" indicates the URL that the hyperlink points to.
+
+These attributes are crucial for creating navigation and linking documents in HTML. The "rel" attribute defines the relationship of the linked resource, while the "href" attribute specifies the location of that resource.
