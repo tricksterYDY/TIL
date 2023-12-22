@@ -1,6 +1,6 @@
 # Q :
 
-## "Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?"
+## Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?
 
 # A : (explained below)
 
@@ -152,7 +152,7 @@ These attributes are crucial for creating navigation and linking documents in HT
 
 # Q :
 
-## What are em and rem in CSS?"
+## What are em and rem in CSS?
 
 # A : (explained below)
 
@@ -199,3 +199,26 @@ In CSS, `em` and `rem` are units of measurement that are used to define the size
    In this example, the `rem` unit is used to set the font size of `h1` and `p` elements relative to the root (`html`) font size.
 
 Using relative units like `em` and `rem` is beneficial for creating flexible and scalable designs, especially in responsive web development where elements need to adapt to different screen sizes. `rem` is often preferred in modern web development because it avoids the compounding effects of nested elements that use `em`.
+
+# Q :
+
+## What are rgb(or rgba) and hsl(or hsla)?
+
+# A : (explained below)
+
+RGB (Red, Green, Blue) and HSL (Hue, Saturation, Lightness) are two different color models used in digital design and computer graphics to represent and manipulate colors.
+
+1. **RGB (or RGBA):**
+   - **RGB:** In the RGB color model, colors are represented as combinations of red, green, and blue light. Each color component can have values in the range of 0 to 255, where 0 represents the absence of color, and 255 represents the maximum intensity of that color. The combination of these three colors produces a wide range of colors. For example, (255, 0, 0) represents pure red, (0, 255, 0) represents pure green, and (0, 0, 255) represents pure blue.
+
+   - **RGBA:** RGBA is an extension of RGB that includes an additional component, "A" for Alpha, which represents the transparency or opacity of the color. The alpha channel ranges from 0 (fully transparent) to 1 (fully opaque). This allows for the creation of semi-transparent or translucent colors.
+
+2. **HSL (or HSLA):**
+   - **HSL:** In the HSL color model, colors are represented by three components: Hue, Saturation, and Lightness. 
+     - **Hue (H):** It represents the type of color (e.g., red, green, blue) and is expressed as an angle from 0 to 360 degrees.
+     - **Saturation (S):** It represents the intensity or vividness of the color and is expressed as a percentage. A saturation of 100% means the color is fully saturated, while 0% represents a shade of gray.
+     - **Lightness (L):** It represents the brightness of the color and is also expressed as a percentage. A lightness of 0% is black, 100% is white, and 50% is the normal color.
+
+   - **HSLA:** Similar to RGBA, HSLA is an extension of HSL that includes an alpha channel for controlling transparency.
+
+In summary, RGB is based on the additive color model using red, green, and blue light, while HSL is based on the perceptual aspects of human vision, categorizing colors by their hue, saturation, and lightness. Both models are widely used in web development, graphic design, and other digital applications.
