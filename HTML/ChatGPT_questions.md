@@ -223,9 +223,8 @@ RGB (Red, Green, Blue) and HSL (Hue, Saturation, Lightness) are two different co
 
 In summary, RGB is based on the additive color model using red, green, and blue light, while HSL is based on the perceptual aspects of human vision, categorizing colors by their hue, saturation, and lightness. Both models are widely used in web development, graphic design, and other digital applications.
 
-# Q :
+# Q : (explained below)
 
-## (explained below)
 ```html
 <!DOCTYPE html>
 <html lang="ko">
@@ -261,9 +260,7 @@ HTML 문서의 최상위 요소는 <html> 요소이며 이는 HTML 문서의 루
 
 일반적으로 :last-of-type 선택자는 동일한 유형의 요소 중에서 마지막 요소에 스타일을 적용하기 위해 사용되며, HTML 문서의 최상위 요소인 <html>은 문서 내에서 단 하나만 존재하므로 해당 선택자의 사용이 적절하지 않습니다.
 
-# Q : (continue)
-
-## (explained below)
+# Q : (continue) (explained below)
 
   f12로 검사하면 '계산됨'에서 'appearance'의 'border-top-color, border-right-color, border-bottom-color, border-left-color'가 각각rgb(255, 0, 0)로 적용되었어
 
