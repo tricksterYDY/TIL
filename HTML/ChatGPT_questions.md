@@ -222,3 +222,57 @@ RGB (Red, Green, Blue) and HSL (Hue, Saturation, Lightness) are two different co
    - **HSLA:** Similar to RGBA, HSLA is an extension of HSL that includes an alpha channel for controlling transparency.
 
 In summary, RGB is based on the additive color model using red, green, and blue light, while HSL is based on the perceptual aspects of human vision, categorizing colors by their hue, saturation, and lightness. Both models are widely used in web development, graphic design, and other digital applications.
+
+# Q :
+
+## (explained below)
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연습문제 1</title>  
+  <style>
+    img {
+      margin-right:50px;
+      border:1px solid #ccc;
+      box-shadow: 2px 2px 5px #ccc;
+    }
+
+    html:last-of-type {
+      border: 2px solid #f00;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/1.jpg" alt="">
+  <img src="images/2.jpg" alt="">
+  <img src="images/3.jpg" alt="">
+</body>
+</html>
+```
+이렇게 쓰면 html의 부모 요소는 누구야
+
+# A : (explained below)
+
+HTML 문서의 최상위 요소는 <html> 요소이며 이는 HTML 문서의 루트 요소입니다. <html> 요소는 다른 모든 HTML 요소를 포함하고 있습니다. 따라서 <html> 요소의 부모는 문서의 최상위 레벨이며 부모가 존재하지 않습니다.
+
+따라서 html:last-of-type는 문서 내에서 마지막으로 나오는 <html> 요소에 스타일을 적용하려는 시도입니다. 그러나 HTML 문서에서는 하나의 <html> 요소만 존재하므로 :last-of-type 선택자가 적용되지 않습니다. 이 스타일은 아무런 효과를 나타내지 않습니다.
+
+일반적으로 :last-of-type 선택자는 동일한 유형의 요소 중에서 마지막 요소에 스타일을 적용하기 위해 사용되며, HTML 문서의 최상위 요소인 <html>은 문서 내에서 단 하나만 존재하므로 해당 선택자의 사용이 적절하지 않습니다.
+
+# Q : (continue)
+
+## (explained below)
+
+  f12로 검사하면 '계산됨'에서 'appearance'의 'border-top-color, border-right-color, border-bottom-color, border-left-color'가 각각rgb(255, 0, 0)로 적용되었어
+
+# A : (explained below)
+
+ 제가 이전에 설명한 내용은 일반적인 경우에 대한 것이었습니다. 그러나 여러 브라우저가 특정 스타일을 해석하는 방식이 서로 다를 수 있습니다. 브라우저에서 특정 스타일이 적용된 것을 확인했다면, 브라우저의 해석 방식에 따라 그런 결과가 나타난 것일 수 있습니다.
+
+제가 확인한 시점에서, 표준적인 방식으로는 `html:last-of-type`는 특별한 효과를 나타내지 않아야 합니다. 그러나 브라우저에 따라 다르게 해석될 수 있습니다.
+
+`html:last-of-type`가 브라우저에서 특정한 동작을 하고 있다면, 브라우저의 해석 방식에 따라 다른 결과가 나타날 수 있습니다. 이 경우 브라우저가 특별한 규칙을 적용한 것으로 보이며, 이는 브라우저의 동작이므로 표준적인 CSS 규칙과는 다를 수 있습니다.
+
+브라우저에 의한 특별한 동작은 일반적인 CSS 규칙에서 벗어날 수 있으므로, 브라우저의 특정 동작을 이해하려면 해당 브라우저의 문서나 업데이트 정보를 확인하는 것이 도움이 될 수 있습니다.
