@@ -1,4 +1,4 @@
-# Q :
+# Q : [html]
 
 ## Why does the browser automatically add the <tbody> tag when creating a table in HTML without explicitly including it?
 
@@ -38,7 +38,7 @@ Is essentially interpreted by the browser as:
 
 This behavior is specified in the HTML5 specification. The <tbody> element is automatically created by the browser if not explicitly provided, and it serves as a container for the rows in the table. It's a part of the HTML standard to enhance the structure of tables in the DOM.
 
-# Q :
+# Q : [html]
 
 ## Self-contained tags list
 
@@ -84,7 +84,7 @@ If by "self-contained tags list" you are referring to HTML tags that are conside
 
 These tags are considered self-contained or void elements because they don't have content and don't require a closing tag. They are often used to embed or define specific elements within the HTML structure.
 
- # Q :
+ # Q : [html]
  
  ## Why type="hidden" is needed?
  
@@ -116,7 +116,7 @@ Hidden fields can be used to track information that doesn't need to be displayed
 ```
 In summary, type="hidden" is needed when you want to include data in a form that should be submitted but doesn't need to be displayed to the user. This is useful for various purposes, including maintaining state, passing information between pages, and enhancing the security of form submissions.
 
-# Q :
+# Q : [html]
 
 ## What do 'link', 'rel', & 'href' stand for?
 
@@ -150,7 +150,7 @@ Certainly! In the context of HTML, "rel" and "href" are attributes used in ancho
 
 These attributes are crucial for creating navigation and linking documents in HTML. The "rel" attribute defines the relationship of the linked resource, while the "href" attribute specifies the location of that resource.
 
-# Q :
+# Q : [css]
 
 ## What are em and rem in CSS?
 
@@ -200,7 +200,7 @@ In CSS, `em` and `rem` are units of measurement that are used to define the size
 
 Using relative units like `em` and `rem` is beneficial for creating flexible and scalable designs, especially in responsive web development where elements need to adapt to different screen sizes. `rem` is often preferred in modern web development because it avoids the compounding effects of nested elements that use `em`.
 
-# Q :
+# Q : [css]
 
 ## What are rgb(or rgba) and hsl(or hsla)?
 
@@ -273,3 +273,31 @@ HTML 문서의 최상위 요소는 <html> 요소이며 이는 HTML 문서의 루
 `html:last-of-type`가 브라우저에서 특정한 동작을 하고 있다면, 브라우저의 해석 방식에 따라 다른 결과가 나타날 수 있습니다. 이 경우 브라우저가 특별한 규칙을 적용한 것으로 보이며, 이는 브라우저의 동작이므로 표준적인 CSS 규칙과는 다를 수 있습니다.
 
 브라우저에 의한 특별한 동작은 일반적인 CSS 규칙에서 벗어날 수 있으므로, 브라우저의 특정 동작을 이해하려면 해당 브라우저의 문서나 업데이트 정보를 확인하는 것이 도움이 될 수 있습니다.
+
+# Q : [css]
+
+## How can I rotate elements around a specific point in CSS?
+
+# A : (explained below)
+
+In CSS, you can use the `transform` property to rotate elements around a specific point. To rotate an element around a specific point, you need to use the `transform-origin` property to set the rotation center. Here's an example:
+
+```css
+.rotate-around-specific-point {
+  /* Set the center of rotation to a specific point */
+  transform-origin: 50% 50%; /* Adjust the values as needed */
+
+  /* Apply the rotation */
+  transform: rotate(45deg); /* You can adjust the angle as needed */
+}
+```
+
+In this example, `50% 50%` as the value of `transform-origin` sets the rotation center to the center of the element. You can adjust these values to rotate around a different point.
+
+Apply the class to an HTML element:
+
+```html
+<div class="rotate-around-specific-point">This element rotates around a specific point</div>
+```
+
+Feel free to customize the values according to your specific design requirements. If you have a specific point in mind, adjust the percentages in `transform-origin` accordingly.
