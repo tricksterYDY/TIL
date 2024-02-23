@@ -76,3 +76,49 @@ elif c < b < a:
 범위의 마지막 정수 : 5
 2에서 4까지의 정수들의 최소 공배수는 : 60
 코드를 짜줘.
+
+# A : (explained below)
+아래는 입력받은 범위의 모든 정수의 최소 공배수를 계산하는 코드입니다.
+
+```python
+def gcd(a, b):
+    # 최대 공약수 계산
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    # 최소 공배수 계산
+    return a * b // gcd(a, b)
+
+def find_lcm_range(a, b):
+    # a부터 b까지의 최소 공배수 계산
+    current_lcm = a
+    for num in range(a + 1, b + 1):
+        current_lcm = lcm(current_lcm, num)
+    return current_lcm
+
+# 사용자로부터 범위의 시작 정수와 마지막 정수를 입력받음
+start = int(input("범위의 시작 정수: "))
+end = int(input("범위의 마지막 정수: "))
+
+# 최소 공배수 계산
+result = find_lcm_range(start, end)
+
+# 결과 출력
+print(f"{start}에서 {end}까지의 정수들의 최소 공배수는: {result}")
+```
+
+위 코드는 다음과 같이 동작합니다:
+
+1. `gcd(a, b)`: 최대 공약수를 계산하는 함수입니다. 유클리드 호제법을 사용하여 최대 공약수를 구합니다.
+
+2. `lcm(a, b)`: 최소 공배수를 계산하는 함수입니다. 최소 공배수는 두 수의 곱을 최대 공약수로 나눈 값입니다.
+
+3. `find_lcm_range(a, b)`: 주어진 범위의 시작 정수 `a`와 마지막 정수 `b` 사이의 모든 정수의 최소 공배수를 계산하는 함수입니다. `a`부터 `b`까지의 모든 수를 순회하며 현재 최소 공배수를 업데이트합니다.
+
+4. 사용자로부터 범위의 시작 정수와 마지막 정수를 입력받습니다.
+
+5. `find_lcm_range` 함수를 사용하여 최소 공배수를 계산하고 결과를 출력합니다.
+
+이제 코드를 실행하면 시작 정수부터 마지막 정수까지의 모든 정수의 최소 공배수가 출력됩니다.
